@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+
+body{
+	font-family: outfit;
+	margin: 0;
+	padding: 0;
+	background: url('background.jpg');
+	background-size: cover;
+	max-height: 100%;
+	text-align: center;
+}
+
+#particles-js{
+	height: 100%;
+	position: fixed;
+	z-index: -9999;
+}
+
+.container{
+	padding: 10px 10px;
+	padding-top: 10vh;
+	display: inline-block;
+	animation-name: Container;
+	animation-duration: 0.8s;
+}
+
+@keyframes Container{
+	from{
+		padding-top: 0vh;
+		opacity: 0;
+	}
+	to{
+		padding-top: 10vh;
+		opacity: 1;
+	}
+}
+
+
+
+img{
+	width: 160px;
+	border-radius: 100px;
+	transition-duration:0.2s ;
+}
+
+img:hover{
+	box-shadow: 3px 3px 3px black;
+}
+
+.box{
+	background: white;
+	border-radius: 10px;
+	width: 100%;
+	padding: 5px 9px;
+	border: 1px solid black;
+}
+a{
+	color: grey;
+	text-decoration: none;
+	transition-duration: 0.4s;
+}
+a:hover{
+	color: darkred;
+}
